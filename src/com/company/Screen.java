@@ -9,7 +9,7 @@ package com.company;
 public class Screen {
 
     //the real width of the field
-    public static final double ACTUAL_FIELD_SIZE = 235;
+    public static final double ACTUAL_FIELD_SIZE = 360;
 
 
     //These are the REAL coordinates on the field that will be the center of the screen

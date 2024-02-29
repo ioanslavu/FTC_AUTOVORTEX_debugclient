@@ -87,7 +87,7 @@ public class Main extends Application {
 
 
         ///////////////////////////////////Setup the background image/////////////////////////////////
-        Image image = new Image(new FileInputStream(System.getProperty("user.dir") + "/field dark.png"));
+        Image image = new Image(new FileInputStream(System.getProperty("user.dir") + "/CenterStageFieldDark.png"));
         fieldBackgroundImageView = new ImageView();
 
         fieldBackgroundImageView.setImage(image);//set the image
@@ -132,19 +132,19 @@ public class Main extends Application {
 
         logImageView.setFitHeight(logImage.getHeight()/2.5);
         logImageView.setFitWidth(logImage.getWidth()/2.5);
-
-        Image logImage2 = new Image(new FileInputStream(System.getProperty("user.dir") + "/log background.png"));
-        ImageView logImageView2 = new ImageView();
-        logImageView2.setImage(logImage2);//set the image
-
-        logImageView2.setFitHeight(logImage.getHeight()/2.5);
-        logImageView2.setFitWidth(logImage.getWidth()/2.5);
-        logImageView2.setX(400);
-
-        logGroup.setTranslateY(10);
-        //add the background image
+//
+//        Image logImage2 = new Image(new FileInputStream(System.getProperty("user.dir") + "/log background.png"));
+//        ImageView logImageView2 = new ImageView();
+//        logImageView2.setImage(logImage2);//set the image
+//
+//        logImageView2.setFitHeight(logImage.getHeight()/2.5);
+//        logImageView2.setFitWidth(logImage.getWidth()/2.5);
+//        logImageView2.setX(400);
+//
+//        logGroup.setTranslateY(10);
+//        //add the background image
         logGroup.getChildren().add(logImageView);
-        logGroup.getChildren().addAll(logImageView2);
+//        logGroup.getChildren().addAll(logImageView2);
 
 
 
@@ -158,18 +158,18 @@ public class Main extends Application {
         debuggingLabel.setLayoutX(16);
         debuggingLabel.setLayoutY(logImageView.getFitHeight()/4.7);
         debuggingLabel.setWrapText(true);
-
-        Label debuggingLabel2 = new Label();
-        debuggingLabel2.setFont(new Font("Courier New",20));
-        debuggingLabel2.textFillProperty().setValue(new Color(1.0,1.0,1.0,1));
-        debuggingLabel2.setPrefWidth(logImageView.getFitWidth()-25);
-        debuggingLabel2.setLayoutX(460);
-        debuggingLabel2.setLayoutY(logImageView.getFitHeight()/4.7);
-        debuggingLabel2.setWrapText(true);
+//
+//        Label debuggingLabel2 = new Label();
+//        debuggingLabel2.setFont(new Font("Courier New",20));
+//        debuggingLabel2.textFillProperty().setValue(new Color(1.0,1.0,1.0,1));
+//        debuggingLabel2.setPrefWidth(logImageView.getFitWidth()-25);
+//        debuggingLabel2.setLayoutX(460);
+//        debuggingLabel2.setLayoutY(logImageView.getFitHeight()/4.7);
+//        debuggingLabel2.setWrapText(true);
 
 
         logGroup.getChildren().add(debuggingLabel);
-        logGroup.getChildren().add(debuggingLabel2);
+//        logGroup.getChildren().add(debuggingLabel2);
 
 
 
@@ -228,12 +228,12 @@ public class Main extends Application {
                             + " , Y: " + MessageProcessing.getRobotY() + "\nAngle: "
                             + String.format("%.2f", Math.toDegrees(MessageProcessing.getRobotAngle())) + "°");
 
-                    debuggingLabel2.setMaxWidth(scene.getWidth() * 0.5);
-
-
-                    debuggingLabel2.setText("Robot 2 Coordinates: \n" +"X: " + MessageProcessing.getRobotX2()
-                            + " , Y: " + MessageProcessing.getRobotY2() + "\nAngle: "
-                            + String.format("%.2f", Math.toDegrees(MessageProcessing.getRobotAngle2())) + "°");
+//                    debuggingLabel2.setMaxWidth(scene.getWidth() * 0.5);
+//
+//
+//                    debuggingLabel2.setText("Robot 2 Coordinates: \n" +"X: " + MessageProcessing.getRobotX2()
+//                            + " , Y: " + MessageProcessing.getRobotY2() + "\nAngle: "
+//                            + String.format("%.2f", Math.toDegrees(MessageProcessing.getRobotAngle2())) + "°");
 
                   System.out.println(primaryStage.getWidth());
 
